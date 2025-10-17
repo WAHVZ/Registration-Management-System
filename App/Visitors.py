@@ -1,3 +1,14 @@
+"""
+Registration-Management-System
+Author: Wali Ashraf
+Usage:
+  python app/Visitors.py
+Notes:
+  - Tested on Windows 10/11 with Python > 3.10/3.11
+  - Requires pywin32 for printing, tk for GUI, reportlab for pdf printing and pillow for image/ canvas settings
+"""
+
+
 import tkinter as tk
 from tkinter import messagebox, ttk
 import tkinter.font as tkFont
