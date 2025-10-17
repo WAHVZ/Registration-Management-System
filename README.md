@@ -24,16 +24,19 @@ cd Registration-Management-System
 2. Create a Python virtual environment (Windows PowerShell):
 ```bash
 python -m venv venv
-.\venv\Scripts\Activate.ps1 ```  # or use activate.bat in cmd
+.\venv\Scripts\Activate.ps1  # or use activate.bat in cmd
+```  
 
 3. Install dependencies:
 ```bash
 pip install --upgrade pip
-pip install -r requirements.txt ```
+pip install -r requirements.txt
+```
 
 4. Run the app:
 ```bash
-python app/visitors.py ```
+python app/visitors.py
+```
 
 ## Files & how they work
 - Visitors.py — Main application / GUI
