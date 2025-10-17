@@ -18,7 +18,8 @@ This repo contains the attendee registration GUI and badge PDF generation.
 1. Clone repo:
 ```bash
 git clone https://github.com/WAHVZ/Registration-Management-System.git
-cd Registration-Management-System ```
+cd Registration-Management-System
+```
 
 2. Create a Python virtual environment (Windows PowerShell):
 ```bash
