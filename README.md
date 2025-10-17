@@ -41,8 +41,8 @@ python app/visitors.py
 ## Files & how they work
 ### Visitors.py — Main application / GUI
   Purpose: Launches the Tkinter registration GUI, handles user input, validation, database I/O, badge generation and focus/UX logic.
-  Notes
-    - Resource files (background, logo, font) are referenced with hardcoded relative paths (Resources/bg.jpg, etc.). Ensure those files exist in that location.           Don't forget to extract the font from its zip, download and mention its path at line 172.
+  Notes:
+    - Resource files (background, logo, font) are referenced with hardcoded relative paths (Resources/bg.jpg, etc.). Ensure those files exist in that location.         - Don't forget to extract the font from its zip, download and mention its path at line 172.
     - Printing (win32api) was removed here — badge generation uses helper.generate_badge() which writes to local disk. If you enable printing, pywin32 is required        and it is Windows-only. The printer should be connected and set to default.
     - The visitor_count is not persisted; restarting app resets it. If you want persistent counts, store in DB or a file.
 
