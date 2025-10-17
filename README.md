@@ -45,7 +45,7 @@ python app/visitors.py
   - Resource files (background, logo, font) are referenced with hardcoded relative paths (Resources/bg.jpg, etc.). Ensure those files exist in that location.
   - Don't forget to extract the font from its zip, download and mention its path at line 172.
   - Printing (win32api) was removed here — badge generation uses helper.generate_badge() which writes to local disk. If you enable printing, pywin32 is required and it is Windows-only. The printer should be connected and set to default.
-    - The visitor_count is not persisted; restarting app resets it. If you want persistent counts, store in DB or a file.
+  - The visitor_count is not persisted; restarting app resets it. If you want persistent counts, store in DB or a file.
 
     Changes to be done:
     - Name your own database file and table name at line 8 and 9.
