@@ -1,0 +1,4 @@
+tk
+pillow
+reportlab
+pywin32
