@@ -22,22 +22,26 @@ You can run the registration system either in a virtual environment (recommended
 #### Option 1 — Virtual Environment
 Keeps dependencies isolated from other Python projects.
 ```bash
+cd desktop
+python -m pip install --upgrade pip
 git clone https://github.com/WAHVZ/Visitor-Registrations-For-Exhibitions.git
-cd RMS
+cd Visitor-Registrations-For-Exhibitions
 python -m venv venv
 venv\Scripts\activate   # (Windows)
  #or source venv/bin/activate  (macOS/Linux)
 pip install -r requirements.txt
-python Visitors.py
+python App/Visitors.py
 ```
 
 #### Option 2 — Run Locally (for normal users)
 If you just want to run it directly:
 ```bash
+cd desktop
+python -m pip install --upgrade pip
 git clone https://github.com/WAHVZ/Visitor-Registrations-For-Exhibitions.git
-cd RMS
+cd Visitor-Registrations-For-Exhibitions
 pip install -r requirements.txt
-python Visitors.py
+python App/Visitors.py
 ```
 
 💡 Tip: On Windows, you can also open the folder in VS Code, open the terminal (Ctrl+), and run python Visitors.py`.
