@@ -1,11 +1,11 @@
 # Visitor Registrations for Exhibitions
 
-# Tkinter Badge Printer
+## Tkinter Badge Printer
 
 Desktop registration app (Tkinter) for event badge creation and printing.
 This repo contains the attendee registration GUI and badge PDF generation.
 
-## Features
+### Features
 - Keyboard-first Tkinter GUI
 - SQLite database (auto-create)
 - PDF badge generation using ReportLab
@@ -15,11 +15,11 @@ This repo contains the attendee registration GUI and badge PDF generation.
 
 <img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/ad297ad9-a433-4bc5-bd06-8aeb746830dc" />
 
-## Quick start (Windows)
+### Quick start (Windows)
 
 You can run the registration system either in a virtual environment (recommended) or directly on your system.
 
-### Option 1 — Virtual Environment
+#### Option 1 — Virtual Environment
 Keeps dependencies isolated from other Python projects.
 ```bash
 git clone https://github.com/WAHVZ/Registration-Management-System.git
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 python Visitors.py
 ```
 
-### Option 2 — Run Locally (for normal users)
+#### Option 2 — Run Locally (for normal users)
 If you just want to run it directly:
 ```bash
 git clone https://github.com/WAHVZ/Registration-Management-System.git
@@ -46,8 +46,8 @@ python Visitors.py
 - Internet connection (for first-time dependency installation),
 - The Resources folder (background, logo, etc.) must exist in the same directory.
 
-## Files & how they work
-### Visitors.py — Main application / GUI
+### Files & how they work
+#### Visitors.py — Main application / GUI
   Purpose: Launches the Tkinter registration GUI, handles user input, validation, database I/O, badge generation and focus/UX logic.
     Notes:
   - Resource files (background, logo, font) are referenced with hardcoded relative paths (Resources/bg.jpg, etc.). Ensure those files exist in that location.
@@ -61,10 +61,10 @@ python Visitors.py
     - Logo image path at line 188 and background image path at line 165.
     - Should this app be called in a local environment, then the terminal/ powershell path must be inside the parent folder, App.
 
-### widgets.py — SearchableComboBox widget
+#### widgets.py — SearchableComboBox widget
   Purpose: A custom widget that behaves like an autocomplete/searchable combobox implemented as a tk.Frame with an Entry and a floating Toplevel + Listbox dropdown.
 
-### helper.py — helpers for cleaning, truncation and PDF generation
+#### helper.py — helpers for cleaning, truncation and PDF generation
   Purpose: Shared utility functions used by the main app: name cleaning, truncation logic, and badge PDF generation.
 
    Changes to be made:
