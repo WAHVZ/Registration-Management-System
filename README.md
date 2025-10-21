@@ -15,28 +15,34 @@ This repo contains the attendee registration GUI and badge PDF generation.
 
 ## Quick start (Windows)
 
-1. Clone repo:
-```bash
-git clone https://github.com/WAHVZ/Registration-Management-System.git
-cd Registration-Management-System
-```
+You can run the registration system either in a virtual environment (recommended) or directly on your system.
 
-2. Create a Python virtual environment (Windows PowerShell):
-```bash
+### Option 1 — Virtual Environment (recommended for developers)
+Keeps dependencies isolated from other Python projects.
+bash```
+git clone https://github.com/yourusername/sukkur25.git
+cd sukkur25
 python -m venv venv
-.\venv\Scripts\Activate.ps1  # or use activate.bat in cmd
-```  
-
-3. Install dependencies:
-```bash
-pip install --upgrade pip
+venv\Scripts\activate   # (Windows)
+# or source venv/bin/activate  (macOS/Linux)
 pip install -r requirements.txt
+python Visitors.py
 ```
 
-4. Run the app:
-```bash
-python app/visitors.py
+### Option 2 — Run Locally (for normal users)
+If you just want to run it directly:
+bash```
+git clone https://github.com/yourusername/sukkur25.git
+cd sukkur25
+pip install -r requirements.txt
+python Visitors.py
 ```
+
+💡 Tip: On Windows, you can also open the folder in VS Code, open the terminal (Ctrl+), and run python Visitors.py`.
+✅ Requirements
+Python 3.13 or later
+Internet connection (for first-time dependency installation)
+The Resources folder (background, logo, etc.) must exist in the same directory.
 
 ## Files & how they work
 ### Visitors.py — Main application / GUI
