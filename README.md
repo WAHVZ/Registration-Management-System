@@ -19,19 +19,19 @@ You can run the registration system either in a virtual environment (recommended
 
 ### Option 1 — Virtual Environment (recommended for developers)
 Keeps dependencies isolated from other Python projects.
-bash```
+```bash
 git clone https://github.com/yourusername/sukkur25.git
 cd sukkur25
 python -m venv venv
 venv\Scripts\activate   # (Windows)
-# or source venv/bin/activate  (macOS/Linux)
+ #or source venv/bin/activate  (macOS/Linux)
 pip install -r requirements.txt
 python Visitors.py
 ```
 
 ### Option 2 — Run Locally (for normal users)
 If you just want to run it directly:
-bash```
+```bash
 git clone https://github.com/yourusername/sukkur25.git
 cd sukkur25
 pip install -r requirements.txt
