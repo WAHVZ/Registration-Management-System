@@ -1,4 +1,4 @@
-# Registration-Management-System
+# Visitor Registrations for Exhibitions
 
 # Tkinter Badge Printer
 
