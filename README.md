@@ -22,7 +22,7 @@ You can run the registration system either in a virtual environment (recommended
 #### Option 1 — Virtual Environment
 Keeps dependencies isolated from other Python projects.
 ```bash
-git clone https://github.com/WAHVZ/Registration-Management-System.git
+git clone https://github.com/WAHVZ/Visitor-Registrations-For-Exhibitions.git
 cd RMS
 python -m venv venv
 venv\Scripts\activate   # (Windows)
@@ -34,7 +34,7 @@ python Visitors.py
 #### Option 2 — Run Locally (for normal users)
 If you just want to run it directly:
 ```bash
-git clone https://github.com/WAHVZ/Registration-Management-System.git
+git clone https://github.com/WAHVZ/Visitor-Registrations-For-Exhibitions.git
 cd RMS
 pip install -r requirements.txt
 python Visitors.py
