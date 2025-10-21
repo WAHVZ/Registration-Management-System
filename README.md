@@ -40,9 +40,9 @@ python Visitors.py
 
 💡 Tip: On Windows, you can also open the folder in VS Code, open the terminal (Ctrl+), and run python Visitors.py`.
 ✅ Requirements
-Python 3.13 or later
-Internet connection (for first-time dependency installation)
-The Resources folder (background, logo, etc.) must exist in the same directory.
+- Python 3.13 or later,
+- Internet connection (for first-time dependency installation),
+- The Resources folder (background, logo, etc.) must exist in the same directory.
 
 ## Files & how they work
 ### Visitors.py — Main application / GUI
