@@ -13,6 +13,8 @@ This repo contains the attendee registration GUI and badge PDF generation.
   
 ---
 
+<img width="1919" height="1019" alt="Image" src="https://github.com/user-attachments/assets/ad297ad9-a433-4bc5-bd06-8aeb746830dc" />
+
 ## Quick start (Windows)
 
 You can run the registration system either in a virtual environment (recommended) or directly on your system.
