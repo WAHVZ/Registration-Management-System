@@ -84,7 +84,6 @@ python Visitors.py
     Changes to be done:
     - Name your own database file and table name at line 8 and 9.
     - To enable printing function, comment-out line 99 and uncomment 100 and 101.
-    - Logo image path at line 188 and background image path at line 165.
     - Should this app be called in a local environment, then the terminal/ powershell path must be inside the parent folder, App.
 
 #### widgets.py — SearchableComboBox widget
@@ -93,9 +92,9 @@ python Visitors.py
 #### helper.py — helpers for cleaning, truncation and PDF generation
   Purpose: Shared utility functions used by the main app: name cleaning, truncation logic, and badge PDF generation.
 
-   Changes to be made:
-   - set correct path to your folder, where the badges/ pdfs will be saved at line 67.
+  Changes to be made:
+  - set correct path to your folder, where the badges/ pdfs will be saved at line 67.
+  
+  Make sure all the files are in the same parent folder, App.
+  Make sure to slash  (/) and not the back-slash (\) while setting paths.
 
-
-
- Make sure all the files are in the same parent folder, App.
