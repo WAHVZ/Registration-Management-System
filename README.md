@@ -18,30 +18,52 @@ This repo contains the attendee registration GUI and badge PDF generation.
 ### Quick start (Windows)
 
 You can run the registration system either in a virtual environment (recommended) or directly on your system.
+Prerequisites:
+- Python/ pip,
+- git (if you don't have git, you can download it from here:
+  https://git-scm.com/install/windows . If you don't want that, you can, alternately, download the zip file of this app.
 
-#### Option 1 — Virtual Environment
-Keeps dependencies isolated from other Python projects.
+#### If working with git:
+##### Open Command prompt:
 ```bash
-cd desktop
+cd Desktop
 python -m pip install --upgrade pip
 git clone https://github.com/WAHVZ/Visitor-Registrations-For-Exhibitions.git
 cd Visitor-Registrations-For-Exhibitions
+```
+If you want to run this in Virtual Environment:
+Make a virtual environment. Keeps dependencies isolated from other Python projects.
+```bash
 python -m venv venv
 venv\Scripts\activate   # (Windows)
  #or source venv/bin/activate  (macOS/Linux)
-pip install -r requirements.txt
-python App/Visitors.py
 ```
-
-#### Option 2 — Run Locally (for normal users)
-If you just want to run it directly:
+Continue:
 ```bash
-cd desktop
-python -m pip install --upgrade pip
-git clone https://github.com/WAHVZ/Visitor-Registrations-For-Exhibitions.git
-cd Visitor-Registrations-For-Exhibitions
 pip install -r requirements.txt
-python App/Visitors.py
+```
+#### If you downloaded the zip file:
+- Open the file in the Downloads folder,
+- Select it and Cut/ paste it to desktop,
+##### Open Command Prompt:
+```bash
+python -m pip install --upgrade pip
+cd Desktop
+cd Visitor-Registrations-For-Exhibitions-main
+pip install -r requirements.txt
+```
+Now open App/ Resources, extract the contents of the zip file of the font, contantia. Open the truetype font file and install the font. Alternately, you can set any other font you want. Copy its path.
+Now open App/ Visitors.py in any file editor like VS Code etc.
+Go to line line 183 and paste the font path there.
+
+After this, open helper.py. Go to line 67 and set this path to the path to your parent folder, App. This is where your badges folder will be created and badges/ pdfs will be saved.
+
+Lastly, go to the parent folder, App. Right-click --> Properties --> Attributes: Uncheck 'Read-only" box. Click Apply. Click OK. 
+
+Finally, run the file Visitors.py:
+In VS Code/ CMD:
+```bash
+python Visitors.py
 ```
 
 💡 Tip: On Windows, you can also open the folder in VS Code, open the terminal (Ctrl+), and run python Visitors.py`.
@@ -61,7 +83,7 @@ python App/Visitors.py
 
     Changes to be done:
     - Name your own database file and table name at line 8 and 9.
-    - To enable printing function, comment-out line 88 and uncomment 89 and 90.
+    - To enable printing function, comment-out line 99 and uncomment 100 and 101.
     - Logo image path at line 188 and background image path at line 165.
     - Should this app be called in a local environment, then the terminal/ powershell path must be inside the parent folder, App.
 
